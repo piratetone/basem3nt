@@ -1,0 +1,7 @@
+Development Notes
+
+# This should only be used if your Heroku deploy fails without it.
+$ rake assets:precompile
+$ git add .
+$ git commit -m "Add precompiled assets for Heroku"
+$ git push heroku master
