@@ -1,5 +1,8 @@
 Rails.application.routes.draw do
   get 'static_pages/about'
+  get 'static_pages/contact'
+
+
 
   resources :users
 
@@ -12,6 +15,9 @@ Rails.application.routes.draw do
    root 'welcome#index'
 
    get '/about' => 'static_pages#about'
+
+   get '/contact' => 'static_pages#contact'
+
 
 
   # Example of regular route:
