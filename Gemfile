@@ -55,6 +55,8 @@ gem 'bootstrap-sass', '~> 3.2.0'
 gem 'autoprefixer-rails'
 gem 'sprockets', '2.11.0'
 gem 'devise'
+gem 'omniauth'
+gem 'omniauth-facebook'
 
 group :development do
   gem "better_errors"
