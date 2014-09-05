@@ -5,3 +5,27 @@
 
 Please feel free to use a different markup language if you do not plan to run
 <tt>rake doc:app</tt>.
+
+
+=== Next Steps
+
+* Building out User Profiles
+** Attributes - Picture (pulled from facebook), Location, Gamertag, Full Name (Default own name / if not pull from Facebook), Email, Bio, Twitter Handle, Twitch Handle, Steam Gamertag, PSN Tag, Available Times
+* User Page
+** Google Calendar API / Availability
+** Google Maps API
+** Xbox One API
+** Show Friends
+
+* Building out Games model
+** Attributes - Time, Date, Teams (Self + Inviting Another User)
+**
+
+
+-----------------
+Down the Pipeline
+* Other Leagues (could work the same as Groups)
+** League Attributes - Videogame / Sport, Members, Games
+
+* News
+** RSS Feeds
