@@ -54,9 +54,11 @@ end
 gem 'bootstrap-sass', '~> 3.2.0'
 gem 'autoprefixer-rails'
 gem 'sprockets', '2.11.0'
-
 gem 'devise'
 
+group :development do
+  gem "better_errors"
+end
 
 
 
