@@ -30,6 +30,8 @@ Rails.application.routes.draw do
 
 
 
+
+
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 
