@@ -62,5 +62,8 @@ group :development do
   gem "better_errors"
 end
 
+gem 'simple_form'
+gem 'paperclip'
+
 
 
