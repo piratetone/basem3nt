@@ -67,4 +67,3 @@ gem 'paperclip'
 
 gem 'cocaine'
 
-
