@@ -65,5 +65,6 @@ end
 gem 'simple_form'
 gem 'paperclip'
 
+gem 'cocaine'
 
 

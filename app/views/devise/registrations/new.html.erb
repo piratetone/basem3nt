@@ -6,6 +6,11 @@
   <div><%= f.label :full_name %><br />
   <%= f.text_field :full_name, autofocus: true %></div>
 
+  <div>
+    <%= f.label :Picture %><br />
+      <%= f.file_field :avatar %>
+  </div>
+
   <div><%= f.label :location %><br />
   <%= f.text_field :location %></div>
   

@@ -8,7 +8,11 @@ class ApplicationController < ActionController::Base
   protected
 
   def configure_permitted_parameters
-    devise_parameter_sanitizer.for(:sign_up) { |u| u.permit(:full_name, :location, :bio, :gamertag, :twitter, :twitch, :psn, :email, :password, :password_confirmation, :remember_me) }
+    devise_parameter_sanitizer.for(:sign_up) { |u| u.permit(
+      :full_name, :location, :bio, 
+      :gamertag, :twitter, :twitch, :psn, :email, :password, :password_confirmation, 
+      :remember_me, :avatar,
+      :avatar_file_name, :avatar_content_type, :avatar_file_size, :avatar_updated_at) }
     devise_parameter_sanitizer.for(:sign_in) { |u| u.permit(:login, :email, :password, :remember_me) }
     devise_parameter_sanitizer.for(:account_update) { |u| u.permit(:full_name, :location, :email, :password, :password_confirmation, :profile_name, :favorite_books, :current_password) }
   end

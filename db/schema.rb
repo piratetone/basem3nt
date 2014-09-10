@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140910180348) do
+ActiveRecord::Schema.define(version: 20140910184438) do
 
   create_table "users", force: true do |t|
     t.datetime "created_at"
@@ -37,6 +37,10 @@ ActiveRecord::Schema.define(version: 20140910180348) do
     t.string   "twitch"
     t.string   "steam"
     t.string   "psn"
+    t.string   "avatar_file_name"
+    t.string   "avatar_content_type"
+    t.integer  "avatar_file_size"
+    t.datetime "avatar_updated_at"
   end
 
   add_index "users", ["email"], name: "index_users_on_email", unique: true
