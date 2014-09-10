@@ -28,6 +28,7 @@ Rails.application.routes.draw do
     delete "logout" => "sessions#destroy"
   end
 
+    get 'users/:id' => 'users#show'
 
 
 
