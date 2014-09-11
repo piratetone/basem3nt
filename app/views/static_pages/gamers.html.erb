@@ -1,0 +1,9 @@
+<h1>Gamers in the House</h1>
+
+<% @users = User.all %>
+<% @users.each do |user| %>
+<ul class="list">
+  <%= image_tag user.avatar.url, :class=>'tinyAv' %>
+  <%= user.gamertag %><br/>
+</ul>
+<% end %>

@@ -23,9 +23,13 @@
             <li class="active"><a href="/">Home</a></li>
             <li><a href="/about">About</a></li>
             <li><a href="/contact">Contact</a></li>
+            <li><a href="/gamers">Gamers</a></li>
+
 
           <% if user_signed_in? %>
-            <li><%= link_to current_user.email, "../profiles/show" %></li>
+            <li><%= link_to current_user.full_name, "../profiles/show" %></li>
+             <li><%= link_to "Settings", edit_user_registration_path, method: :get, :class =>  "navbar-link, ../users/edit" %></li>
+
             <li><%= link_to "Logout", destroy_user_session_path, method: :delete, :class => 'navbar-link, logInLogOut' %></li>
           <% else %>             
           <li><%= link_to "Register", new_user_registration_path, :class => 'navbar-link, loginLogOut' %></li>
@@ -34,7 +38,6 @@
             <li><%= link_to "Sign in with Facebook", user_omniauth_authorize_path(:facebook) %>
 </li>
           <% end %> 
-
 
 
           </ul>
