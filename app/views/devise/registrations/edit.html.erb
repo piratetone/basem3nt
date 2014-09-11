@@ -1,16 +1,14 @@
-<h2>Edit <%= resource_name.to_s.humanize %></h2>
+<h2>Edit Profile</h2>
 
 
 
+    <legend></legend>
 
+    <%= bootstrap_form_for(resource, as: resource_name, url: registration_path(resource_name), html: { method: :put }) do |f| %>
+  <%= devise_error_messages!%>
 
-
-<%= bootstrap_form_for(resource, as: resource_name, url: registration_path(resource_name), html: { method: :put }) do |f| %>
-  <%= devise_error_messages! %>
-
-
-
-
+<form class="form-horizontal">
+    <fieldset>
 
   <div><%= f.file_field :avatar, :class => 'btn btn-info' %>
   </div>
@@ -32,7 +30,7 @@
   <br />
 
   <div>
-  <%= f.text_area :bio %>
+  <%= f.text_area :bio,  rows:"3"  %>
   </div>
   <br />
 
@@ -61,8 +59,7 @@
   <% end %>
 
   <div>
-    <%= f.password_field :password, autocomplete: "off" %>
-  (leave blank if you don't want to change it)
+    <%= f.password_field :password, help: "leave blank if you don't want to change it", autocomplete: "off" %>
 </div>
   <br />
 
@@ -72,11 +69,15 @@
   <br />
 
   <div><i></i><br />
-    <%= f.password_field :current_password, autocomplete: "off" %>(we need your current password to confirm your changes)
+    <%= f.password_field :current_password, help:"we need your current password to confirm your changes",  autocomplete: "off" %>
   </div>
+
+  </fieldset>
+</form>
   <br />
 
-  <div><%= f.submit "Update", :class => "btn btn-success" %></div>
+  <div><%= f.submit "Update", :class => "btn btn-success" %>  <button type="button" class="btn btn-info">Cancel</button>
+</div>
 <% end %>
 <br /><br />
 

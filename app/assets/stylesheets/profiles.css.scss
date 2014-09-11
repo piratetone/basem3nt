@@ -26,3 +26,24 @@ hr {
 .list {
 	padding:1em;
 }
+
+.smallBox {
+	position:absolute;
+	right:15em;
+	top:1em;
+	display: -webkit-box;
+	float:right;
+	max-width:9em;
+	max-height:1.9em;
+}
+
+
+.smallBox2 {
+	position:absolute;
+	right:15em;
+	top:9em;
+	display: -webkit-box;
+	float:right;
+	max-width:9em;
+	max-height:1.9em;
+}
