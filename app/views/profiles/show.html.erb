@@ -4,27 +4,46 @@
 <div class="profile-page-info grid-4">
 
 
-	<h4>Location</h4>
-	<h5><%= current_user.location %></h5>
-<hr>
-	<h4>Bio</h4>
-	<h5><%= current_user.bio %></h5>
+	<div>
+		<h4>Location</h4>
+		<h5><%= current_user.location %></h5>
+	</div>
+	<hr>
+	<div>
+		<h4>Bio</h4>
+		<h5><%= current_user.bio %></h5>
+	</div>
+	<hr>
+	
+	<div>
+		<h4>Gamer Tag</h4>
+		<h5><%= current_user.gamertag %>
+		</h5>
+	</div>
+	<hr>
 
-	<h4>Gamer Tag</h4>
-	<h5><%= current_user.gamertag %></h5>
+	<div>
+		<h4>Twitter</h4>
+		<h5><%= current_user.twitter %></h5>
+	</div>
+	<hr>
 
-	<h4>Twitter</h4>
-	<h5><%= current_user.twitter %></h5>
+	<div>
+		<h4>Twitch</h4>
+		<h5><%= current_user.twitch %></h5>
+	</div>
+	<hr>
 
-	<h4>Twitch</h4>
-	<h5><%= current_user.twitch %></h5>
-
+	<div>
 	<h4>PSN</h4>
-	<h5><%= current_user.psn %></h5>
+		<h5><%= current_user.psn %></h5>
+		</div>
+	<hr>
 
-
-	<h4>Email</h4>
-	<h5><%= current_user.email %></h5><br>
+	<div>
+		<h4>Email</h4>
+		<h5><%= current_user.email %></5>
+	</div> 
 
 </div>
 
