@@ -57,6 +57,8 @@ gem 'sprockets', '2.11.0'
 gem 'devise'
 gem 'omniauth'
 gem 'omniauth-facebook'
+gem 'bootstrap_form'
+
 
 group :development do
   gem "better_errors"

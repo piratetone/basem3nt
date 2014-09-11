@@ -5,59 +5,83 @@
 
 
 
-<%= form_for(resource, as: resource_name, url: registration_path(resource_name), html: { method: :put }) do |f| %>
+<%= bootstrap_form_for(resource, as: resource_name, url: registration_path(resource_name), html: { method: :put }) do |f| %>
   <%= devise_error_messages! %>
 
 
 
 
 
-  <%= f.file_field :avatar %>
+  <div><%= f.file_field :avatar, :class => 'btn btn-info' %>
+  </div>
+   <br />
 
-  <div><%= f.label :full_name %><br />
-  <%= f.text_field :full_name, autofocus: true %></div>
+  <div>
+  <%= f.text_field :gamertag %>
+  </div>
+  <br />
 
-  <div><%= f.label :location %><br />
-  <%= f.text_field :location %></div>
+  <div>
+  <%= f.text_field :full_name, autofocus: true %>
+  </div>
+  <br />
   
-  <div><%= f.label :bio %><br />
-  <%= f.text_area :bio %></div>
+  <div>
+  <%= f.text_field :location %>
+  </div>
+  <br />
 
-  <div><%= f.label :gamertag %><br />
-  <%= f.text_field :gamertag %></div>
-  
-    <div><%= f.label :twitter %><br />
-  <%= f.text_field :twitter %></div>
+  <div>
+  <%= f.text_area :bio %>
+  </div>
+  <br />
 
-  <div><%= f.label :twitch %><br />
-  <%= f.text_field :twitch %></div>
+  <div>
+  <%= f.text_field :twitter %>
+  </div>  
+  <br />
 
-  <div><%= f.label :psn %><br />
-  <%= f.text_field :psn %></div>
+  <div>
+  <%= f.text_field :twitch %>
+  </div>
+  <br />
 
+  <div>
+  <%= f.text_field :psn %>
+  </div>
+  <br />
 
-
-  <div><%= f.label :email %><br />
-  <%= f.email_field :email, autofocus: true %></div>
+  <div>
+  <%= f.email_field :email, autofocus: true %>
+  </div>
+  <br />
 
   <% if devise_mapping.confirmable? && resource.pending_reconfirmation? %>
     <div>Currently waiting confirmation for: <%= resource.unconfirmed_email %></div>
   <% end %>
 
-  <div><%= f.label :password %> <i>(leave blank if you don't want to change it)</i><br />
-    <%= f.password_field :password, autocomplete: "off" %></div>
+  <div>
+    <%= f.password_field :password, autocomplete: "off" %>
+  (leave blank if you don't want to change it)
+</div>
+  <br />
 
-  <div><%= f.label :password_confirmation %><br />
-    <%= f.password_field :password_confirmation, autocomplete: "off" %></div>
+  <div>
+    <%= f.password_field :password_confirmation, autocomplete: "off" %>
+  </div>
+  <br />
 
-  <div><%= f.label :current_password %> <i>(we need your current password to confirm your changes)</i><br />
-    <%= f.password_field :current_password, autocomplete: "off" %></div>
+  <div><i></i><br />
+    <%= f.password_field :current_password, autocomplete: "off" %>(we need your current password to confirm your changes)
+  </div>
+  <br />
 
-  <div><%= f.submit "Update" %></div>
+  <div><%= f.submit "Update", :class => "btn btn-success" %></div>
 <% end %>
+<br /><br />
 
-<h3>Cancel my account </h3>
+<h4>Cancel my account </h4>
 
-<p>Unhappy? <%= button_to "Cancel my account", registration_path(resource_name), data: { confirm: "Are you sure?" }, method: :delete %></p>
+<p>Unhappy? <%= button_to "Cancel my account", registration_path(resource_name), data: { confirm: "Are you sure?" }, method: :delete, :class => "btn btn-danger" %></p>
 
 <%= link_to "Back", :back %>
