@@ -14,7 +14,7 @@ class ApplicationController < ActionController::Base
       :remember_me, :avatar,
       :avatar_file_name, :avatar_content_type, :avatar_file_size, :avatar_updated_at) }
     devise_parameter_sanitizer.for(:sign_in) { |u| u.permit(:login, :email, :password, :remember_me) }
-    devise_parameter_sanitizer.for(:account_update) { |u| u.permit(:full_name, :location, :email, :password, :password_confirmation, :profile_name, :favorite_books, :current_password) }
+    devise_parameter_sanitizer.for(:account_update) { |u| u.permit(:full_name, :location, :email, :password, :password_confirmation, :psn, :bio, :current_password, :twitch,:twitter) }
   end
 
 end
