@@ -1,20 +1,31 @@
 <h1><%= current_user.gamertag %>'s Profile page</h1>
 <p>Check out more information about me below.</p>
 
-<div class="profile-page-info">
-<h4><%= current_user.email %></h4>
+<div class="profile-page-info grid-4">
 
-<h4><%= current_user.location %></h4>
 
-<h4><%= current_user.bio %></h4>
+	<h4>Location</h4>
+	<h5><%= current_user.location %></h5>
+<hr>
+	<h4>Bio</h4>
+	<h5><%= current_user.bio %></h5>
 
-<h4><%= current_user.gamertag %></h4>
+	<h4>Gamer Tag</h4>
+	<h5><%= current_user.gamertag %></h5>
 
-<h4><%= current_user.twitter %></h4>
+	<h4>Twitter</h4>
+	<h5><%= current_user.twitter %></h5>
 
-<h4><%= current_user.twitch %></h4>
+	<h4>Twitch</h4>
+	<h5><%= current_user.twitch %></h5>
 
-<h4><%= current_user.psn %></h4>
+	<h4>PSN</h4>
+	<h5><%= current_user.psn %></h5>
+
+
+	<h4>Email</h4>
+	<h5><%= current_user.email %></h5><br>
+
 </div>
 
 <div class="avatar"><%= image_tag current_user.avatar.url %>
