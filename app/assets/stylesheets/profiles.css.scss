@@ -2,11 +2,6 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-.avatar img {
-	float: right;
-	max-width: 200px;
-	border-radius: 50%;
-}
 
 .profile-page-info {
 	float: left;
@@ -47,3 +42,28 @@ hr {
 	max-width:9em;
 	max-height:1.9em;
 }
+
+
+/*   Edit   Page     */
+
+
+
+.form1 {
+	display: inline-flex; 
+}
+
+.avatar img {
+	float: right;
+	max-width: 200px;
+	border-radius: 50%;
+}
+
+
+.basicInfo {
+	clear:both;
+	float:right; 
+	display:inline-flex;
+}
+
+
+

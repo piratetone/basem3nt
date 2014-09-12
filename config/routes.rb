@@ -24,6 +24,9 @@ Rails.application.routes.draw do
 
    get '/gamers' => 'static_pages#gamers'
 
+   get '/calendar' => 'static_pages#calendar'
+
+
    controller :sessions do
     get "login" => "sessions#new"
     post "login" => "sessions#create"
