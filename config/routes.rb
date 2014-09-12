@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
   
+  resources :games
+
   get 'profiles/show'
 
   devise_for :users, :controllers => { :omniauth_callbacks => "omniauth_callbacks" }
