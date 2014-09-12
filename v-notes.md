@@ -44,7 +44,8 @@
 
 	-- http://www.corruptdb.org/
 
-
+- Date adn Time Display
+	-- http://apidock.com/ruby/DateTime/strftime
 
      minor tasks 
 -------------------
