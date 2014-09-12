@@ -76,8 +76,7 @@ header h1 {
     line-height: 300px;
   }
   header h1 {
-    font-size: 24px;
-    font-size: 1.5rem;
+    font-size: 3em;
   }
 }
 

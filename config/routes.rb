@@ -4,8 +4,6 @@ Rails.application.routes.draw do
 
   devise_for :users, :controllers => { :omniauth_callbacks => "omniauth_callbacks" }
   get 'static_pages/about'
-  get 'static_pages/contact'
-
 
 
  resources :users
@@ -35,6 +33,7 @@ Rails.application.routes.draw do
 
     get 'users/:id' => 'users#show'
 
+  get '/:id', to: 'profiles#show', as: :profile
 
 
 

@@ -52,6 +52,10 @@
 - choose file button
 	-- hide it
 
+- fix the sign-in links
 
+- fix the margins of the body
+
+- fix flash for signing out or error
 
 
