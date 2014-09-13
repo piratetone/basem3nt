@@ -13,7 +13,21 @@ end
 
 
 
+			      v's bugs
+----------------------------------------
+
+- Bootstrap alert-errors 
+	-- Fixing a bug where the alert error from an failed sign-in  wasn't taking any styling from the Bootstrap
+			--- https://github.com/plataformatec/devise/wiki/How-To:-Integrate-I18n-Flash-Messages-with-Devise-and-Bootstrap
 
 
--- Fixing a bug where error wasn't taking any styling from the Bootstrap
-		-- https://github.com/plataformatec/devise/wiki/How-To:-Integrate-I18n-Flash-Messages-with-Devise-and-Bootstrap
+- Hiding tags with input fields 
+	-- had to read the documatation well where the code was 
+		--- https://github.com/bootstrap-ruby/rails-bootstrap-forms
+
+
+
+
+
+
+		

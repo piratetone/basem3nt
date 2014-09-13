@@ -38,32 +38,68 @@
             <li><%= link_to "Logout", destroy_user_session_path, method: :delete, :class => 'navbar-link, logInLogOut' %></li>
 
 
-            <% else %>      
-           <%= bootstrap_form_for(resource, as: resource_name, url: session_path(resource_name),  layout: :horizontal, label_col: "col-sm-2", control_col: "col-sm-10") do |f| %>
-              <div class="smallBox">
-                <div>
-                <%= f.email_field :email,  placeholder: "Email",  autofocus: true %>
-              </div>
-              <div>
-                <%= f.password_field :password, placeholder:"password", autocomplete: "off"  %>
-              </div>
+            <% else %>  
+
+             <div class="logBoxes col-md-4">    
+           <%= bootstrap_form_for(resource, as: resource_name, url: session_path(resource_name),  layout: :horizontal, label_col: "col-sm-1", control_col: "col-sm-1") do |f| %>
+             
+
+                <div class="sign  form-group form-group-sm" style="display:-webkit-inline;">
+                  <%= f.email_field :email,  placeholder: "Email", :class => "input", autofocus: true, hide_label: :true %>
+                  <%= f.password_field :password, placeholder:"password", :class=> "input", autocomplete: "off", hide_label: :true %>
+              <%= f.submit  "Sign in", class: "btn btn-xs btn-success" %>
+              <%= button_to('Sign up', new_user_registration_path, :class=>  'btn btn-xs btn-primary') %> 
+
+                </div> 
+
+                </div>
+
+               
+
+
+<!-- 
+
+          <div class="bigB">    
+           <%= bootstrap_form_for(resource, as: resource_name, url: session_path(resource_name),  layout: :horizontal) do |f| %>
+             
+
+                <div class="form-group form-group-sm">
+                  <div><%= f.email_field :email,  placeholder: "Email", :class => "input", autofocus: true, hide_label: :true %>
+                  </div>
+                  <div><%= f.password_field :password, placeholder:"password", :class=> "input", autocomplete: "off", hide_label: :true %>
+                  </div>
+                  <div>
+                 <%= f.submit  "Sign in", class: "btn btn-xs btn-success" %>
+                  <%= button_to('Sign up', new_user_registration_path, :class=>  'btn btn-xs btn-primary') %> 
+                </div>
+  <% end %> 
+
+
+                </div>  -->
+
+
+
+
+
+
+
+
+
+
                    <% if devise_mapping.rememberable? -%>
 
-              <div> 
+              
                   <% end %>
                 <%= f.form_group do %>
-               <button type="submit" class="btn btn-success">
-                Sign in</button>
+               
                 </div> 
 
           </div>
          <% end %>
 
                   <div class="smallBox2">
-                    <%= f.check_box :remember_me %>
-
-                    <li><%= link_to "Sign in with Facebook", user_omniauth_authorize_path(:facebook) %>
-                   </li>       
+   
+     
                     <li><%= link_to "Register", new_user_registration_path, :class => 'navbar-link, loginLogOut' %>
                     </li>
                   </div>

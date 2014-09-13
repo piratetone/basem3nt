@@ -57,6 +57,38 @@ body {
 
 
 
+/*   index  layout   */
+
+.sign {
+  float:left;
+  position:relative;
+  display: -webkit-box;
+  
+}
+
+.logBoxes {
+  position:absolute;
+  right:0;
+/*  background-color:red;
+*/  top:.8em;
+  display: -webkit-box;
+  float:left;
+  right:5em;
+  
+}
+
+
+.smallBox2 {
+  position:absolute;
+  top:9em;
+  display: -webkit-box;
+  float:left;
+}
+
+
+
+
+
 
 .alert {
 	margin-top: 10px; 
@@ -81,6 +113,7 @@ body {
 
  /*  Sign-in page    */
 
+
 .signIn {
   padding:0  0 2em 0;
 }
@@ -88,4 +121,42 @@ body {
   left:33.333%;
  }
 
+.input {
+  width:10em;
+  margin:0;
+  padding:0;
+  
+}
 
+
+
+
+
+/*
+
+
+
+
+.bigB{
+  background:blue;
+  top: 50%;
+  right:50%;
+  position:relative;
+}
+
+.bigB div{
+  float:left;
+  margin: 0;
+  padding:0;
+}
+
+.bigB input {
+  margin: .4em; 
+  position:relative;
+  width:7em;
+}
+
+
+
+
+*/
