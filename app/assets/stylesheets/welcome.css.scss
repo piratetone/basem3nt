@@ -1,3 +1,90 @@
 // Place all the styles related to the Welcome controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+
+header.band {
+    background: #4b371f;
+    color: white;
+    text-align: center;
+    padding: 10% 0 15% 0;
+    color: red; 
+}
+
+header.band h1 {
+    font-size: 3em;
+    line-height: 1em;
+    margin-bottom: 1em;
+}
+
+#basement {
+	width: 100%;
+	position: absolute;
+	clear: both;
+	left: 0;
+	top: -7em;
+	height:30em;
+	
+}
+
+.welcome {
+	top:12em;
+	position:relative;
+}
+
+
+a.button {
+    background: #e33f0c;
+    text-align: center;
+    padding: .5em 1em;
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    box-shadow: 0 0.2em 0 #ab3009;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+         
+    /*transition cross-browser stuff*/
+    -webkit-transition: background 0.2s ease-out;  /* Safari 3.2+, Chrome */
+    -moz-transition: background 0.2s ease-out;  /* Firefox 4-15 */
+    -o-transition: background 0.2s ease-out;  /* Opera 10.5–12.00 */
+    transition: background 0.2s ease-out;  /* Firefox 16+, Opera 12.50+ */
+}
+ 
+a.button:hover {
+    background: #ab3009;
+}
+
+
+@media only screen and (min-width: 767px) { 
+ 
+}
+
+@media only screen and (min-width: 767px) { 
+ 
+    body {
+        font-size: 1.125em; /* 18px / 16px */
+        line-height: 1.7em;
+    }
+ 
+    header.band {
+        background-image:url(/assets/iceBg.jpg);
+        background-size: 100%;
+    }
+     
+    header.band h1 {
+        font-size: 3.25em; /*52 / 16*/
+    }
+     
+    a.button {
+        padding: .75em 1.5em;
+    }
+     
+}
+
+
+
+
+
+

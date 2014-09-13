@@ -10,6 +10,9 @@
 
 
 
+
+
+
    sublime notes 
 -------------------
 
@@ -18,6 +21,13 @@
 
 - pulling images on Rails
  	-- <img src="/assets/cd-icon-picture.svg" alt="Picture">
+
+-wrap a body with <p> tags
+	-- ctrl + shft + w
+
+
+
+
 
 
      sources 
