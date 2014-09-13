@@ -10,7 +10,7 @@
 
   <tbody class="game">
     <% @games.each do |game| %>
-      <tr>
+      <tr id="gameRow">
         <td><%= game.id %>
         <td><%= link_to  game.time.strftime("%a %b %d @ %I:%M %p"), game %></td>
 

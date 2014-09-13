@@ -1,16 +1,20 @@
 
 
 
-      notes 
+    					  notes 
+---------------------------------------------------------
+
+
+
+
+        css
 -------------------
-
-- meat ipsum 
-	-- http://baconipsum.com/
-
-
-
-
-
+ 
+- border lines
+	-- #gameRow { 
+	border-bottom: solid 1px rgba(0,0,0,0.03);
+	}
+	
 
 
    sublime notes 
@@ -24,6 +28,7 @@
 
 -wrap a body with <p> tags
 	-- ctrl + shft + w
+
 
 
 
@@ -46,7 +51,6 @@
 - Icethetics.co
 	-- http://www.icethetics.co/calendar/
 
-
 - Time Line
 	-- http://codyhouse.co/gem/vertical-timeline/
 	
@@ -57,20 +61,9 @@
 - Date adn Time Display
 	-- http://apidock.com/ruby/DateTime/strftime
 
+- Text Align
+	-- http://css-tricks.com/almanac/properties/t/text-align/
 
 
 
-     minor tasks 
--------------------
-
-- choose file button
-	-- hide it
-
-- fix the sign-in links
-
-- fix the margins of the body
-
-- fix flash for signing out or error
-
-- fix the profile link
 
