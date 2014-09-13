@@ -69,6 +69,6 @@ class GamesController < ApplicationController
     end
 
     def game_params
-      params.require(:game).permit(:time, :user_id, :gamer, :id[:gamertag])
+      params.require(:game).permit(:time, :user_id, :gamer, {id:[]})
     end
 end

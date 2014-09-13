@@ -47,6 +47,9 @@
 - Date adn Time Display
 	-- http://apidock.com/ruby/DateTime/strftime
 
+
+
+
      minor tasks 
 -------------------
 
@@ -59,4 +62,5 @@
 
 - fix flash for signing out or error
 
+- fix the profile link
 

@@ -4,6 +4,7 @@
 <% @users.each do |user| %>
 <ul class="list">
   <%= image_tag user.avatar.url, :class=>'tinyAv' %>
-  <%= user.gamertag %><br/>
+  <%= user.gamertag %> 
+  <span class='smlFont'><%= user.location  %></span>
 </ul>
 <% end %>
