@@ -16,18 +16,41 @@
  */
 
 
- 
+
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
+@font-face {
+  font-family: 'rale';    
+  src: url('assets/rale.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}  
+ 
+  @font-face {
+  font-family: 'Gotham';    
+  src: url('fonts/Gotham-Medium.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+} 
+ 
 body {
 	padding-top: 6em;
 	padding-bottom:4em;
  	margin:0 !important;
  	padding-left:0;
  	width:100%;
-
 }
+
+
+@font-face {
+  font-family: 'jo';    
+  src: url('fonts/jo.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+} 
+
+
 
 
 .alert {
@@ -48,6 +71,5 @@ body {
   @extend .control-group.error
 }
 
-
-
+ 
 

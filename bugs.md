@@ -10,3 +10,10 @@ Within the create method of any controller, if you'd like to pass the current_us
     @game = current_user.games.build(game_params) 
 end
 ---
+
+
+
+
+
+-- Fixing a bug where error wasn't taking any styling from the Bootstrap
+		-- https://github.com/plataformatec/devise/wiki/How-To:-Integrate-I18n-Flash-Messages-with-Devise-and-Bootstrap
