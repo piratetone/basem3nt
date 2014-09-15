@@ -57,7 +57,7 @@ gem 'devise'
 gem 'omniauth'
 gem 'omniauth-facebook'
 gem 'bootstrap_form'
-
+gem 'geocoder'
 
 group :development do
   gem "better_errors"

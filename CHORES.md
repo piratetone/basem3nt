@@ -32,3 +32,6 @@
 - fix the profile link
 
 - font issue, not importing and displayin
+
+- link the sign up button to the sign up page
+

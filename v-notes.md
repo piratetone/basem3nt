@@ -64,6 +64,7 @@
 - Text Align
 	-- http://css-tricks.com/almanac/properties/t/text-align/
 
-
+- Geocoder
+	-- https://github.com/alexreisner/geocoder
 
 
