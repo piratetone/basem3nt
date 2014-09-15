@@ -128,11 +128,23 @@ body {
   
 }
 
-@media only screen and (max-width: 1200px) {
-  .signIn{ margin-top:6em;} 
-  .signInBox{ width:33.333333%;}
+
+@media only screen and (max-width: 770px) {
+  .signIn{ margin-top:3em;} 
+  .signInBox{ width:100%; left:0 !important;}
 
 }
+
+@media only screen and (min-width: 771px) {
+  .signIn{ margin-top:6em;} 
+  .signInBox{ width:66.6666%; left:16.5%; text-align:center;}
+
+}
+
+
+
+
+
 
 
 
