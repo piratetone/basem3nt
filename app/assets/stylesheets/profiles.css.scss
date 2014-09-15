@@ -24,12 +24,22 @@ hr {
 }
 
 .avatar img {
-	position:absolute;
+	top: 10%;
 	float: right;
-	clear:both;
+	clear:right;
 	right: 25%;
 	position:relative;
-	max-width: 200px;
+	max-width: 15em;
+	border-radius: 50%;
+}
+
+.map img {
+	top: 10%;
+	float: right;
+	clear:right;
+	right: 25%;
+	position:relative;
+	max-width: 18em;
 	border-radius: 50%;
 }
 

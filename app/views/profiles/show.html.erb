@@ -50,5 +50,5 @@
 
 <div class="avatar"><%= image_tag current_user.avatar.url %>
 </div>
-    <div class="avatar"> <%= image_tag "http://maps.google.com/maps/api/staticmap?size=300x300&sensor=false&zoom=16&markers=#{current_user.latitude}%2C#{current_user.longitude}" %>
+    <div class="map"> <%= image_tag "http://maps.google.com/maps/api/staticmap?size=300x300&sensor=false&zoom=4&markers=#{current_user.latitude}%2C#{current_user.longitude}" %>
     </div> 
