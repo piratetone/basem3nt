@@ -1,14 +1,15 @@
 class InvitesController < ApplicationController
+  
   def create
-    @event = Event.find(params[:invite][:attended_event_id])
-    current_user.attend!(@event)
-    redirect_to @event
+    @game = Game.find(params[:invite][:attended_event_id])
+    current_user.attend!(@game)
+    redirect_to @game
   end
 
   def destroy
-    @event = Invite.find(params[:id]).attended_event
-    current_user.cancel!(@event)
-    redirect_to @event
+    @game = Invite.find(params[:id]).attended_event
+    current_user.cancel!(@game)
+    redirect_to @game
   end
 
 end

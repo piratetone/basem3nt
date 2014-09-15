@@ -3,15 +3,15 @@
              major tasks 
 --------------------------------------
 
-- create the relationships for events
+- create the relationships for events - 9/16
 
-- redo the calendar so that it updates with events
+- redo the calendar so that it updates with events - 9/20
 
-- create a forum for diplomatic discussion
+- create a forum for diplomatic discussion - 9/20
 
-- create leagues/groups
+- create leagues/groups - 9/16
 
-- implement Gmap to plot all the users
+- implement Gmap to plot all the users - 9/16
 
 
 
@@ -31,7 +31,7 @@
 
 - fix the profile link
 
-- font issue, not importing and displayin
+- font issue, not importing and displaying
 
 - link the sign up button to the sign up page
 
