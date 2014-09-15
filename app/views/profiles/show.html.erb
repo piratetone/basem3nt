@@ -7,6 +7,8 @@
 		<h4>Location</h4>
 		<h5><%= current_user.location %></h5>
 	</div>
+
+
 	<hr>
 	<div>
 		<h4>Bio</h4>
@@ -48,3 +50,5 @@
 
 <div class="avatar"><%= image_tag current_user.avatar.url %>
 </div>
+    <div class="avatar"> <%= image_tag "http://maps.google.com/maps/api/staticmap?size=300x300&sensor=false&zoom=16&markers=#{current_user.latitude}%2C#{current_user.longitude}" %>
+    </div> 

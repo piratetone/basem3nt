@@ -24,7 +24,11 @@ hr {
 }
 
 .avatar img {
+	position:absolute;
 	float: right;
+	clear:both;
+	right: 25%;
+	position:relative;
 	max-width: 200px;
 	border-radius: 50%;
 }
@@ -32,8 +36,10 @@ hr {
 
 .basicInfo {
 	clear:both;
-	float:right; 
+	float:right;
+	position:relative; 
 	display:inline-flex;
+	right:27%;
 }
 
 
