@@ -5,14 +5,18 @@
     <tr>
       <th class="th">Gamer Tag</th> &nbsp &nbsp
       <th class="th">Time</th>
+      <th class="th">Gamer Tag</th>
+
     </tr>
   </thead>
 
   <tbody class="game">
     <% @games.each do |game| %>
       <tr id="gameRow">
-        <td><%= game.id %>
-        <td><%= link_to  game.time.strftime("%a %b %d @ %I:%M %p"), game %></td>
+        <td><%= game.user_id %></td>
+        <td><%= link_to  game.time.strftime("%a %b %d @ %I:%M %p"), game %> </td> &nbsp &nbsp
+         <td><%= game.friend_id %> </td>
+
 
       </tr>
     <% end %>

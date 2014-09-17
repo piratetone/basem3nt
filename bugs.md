@@ -25,9 +25,9 @@ end
 	-- had to read the documatation well where the code was 
 		--- https://github.com/bootstrap-ruby/rails-bootstrap-forms
 
-
-
-
+- if server is in use, but nothing is running, run this command in the terminal to see what is using it
+	-- sudo lsof -iTCP -sTCP:LISTEN -P | grep :3000
+	-- https://teamtreehouse.com/forum/problem-starting-server
 
 
 		
