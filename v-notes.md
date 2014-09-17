@@ -1,6 +1,7 @@
 
 
 
+
     					  notes 
 ---------------------------------------------------------
 
@@ -70,5 +71,6 @@
 - Relationships and invitations
 	-- https://github.com/TomCawthorn/treebook
 	
-
+- Google Maps
+	-- http://diginit.wordpress.com/2011/03/18/mapping-your-location-with-google-static-maps-api-tutorial/
 

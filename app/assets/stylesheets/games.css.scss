@@ -2,7 +2,10 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-
+.gTable{
+	text-align:center;
+	float:none;
+	}
 
 .game{ font-size:1.5em; text-align:center;}
 
@@ -15,3 +18,12 @@
 }
 
 .gamePic { width: 6em; border-radius: 3%;}
+
+.newGame {
+	text-align:center;
+	margin:3em; }
+
+div.newGame > div{
+	text-align:center;
+	float:none;
+}

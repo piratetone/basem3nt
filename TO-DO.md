@@ -7,11 +7,10 @@
 
 - redo the calendar so that it updates with events - 9/20
 
-- create a forum for diplomatic discussion - 9/20
+- create a forum for diplomatic discussions - 9/20
 
 - create leagues/groups - 9/16
 
-- implement Gmap to plot all the users - 9/16
 
 
 

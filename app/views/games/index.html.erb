@@ -1,5 +1,6 @@
 <h1><b>Games</b></h1>
 
+<div class="container gTable"> 
 <table>
   <thead class="game">
     <tr>
@@ -22,8 +23,12 @@
     <% end %>
   </tbody>
 </table>
+</div>
 
 <br>
-<div class="btn btn-success">
-<%= link_to 'New Game',  new_game_path,  :class=>"white" %>
+
+<div class="col-md-12 newGame">
+ <div class="btn btn-success col-md-4">
+    <%= link_to 'New Game',  new_game_path,  :class=>"white" %>
+ </div>
 </div>

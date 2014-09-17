@@ -12,10 +12,11 @@
 
 
 
-	<img src = "http://maps.google.com/maps/api/staticmap?center=NewYork,NY&size=700x400&sensor=false&zoom=3&markers=color:blue
+	<div class= "mapBox"> <img class="col-md-12" src = "http://maps.google.com/maps/api/staticmap?center=Columbus,OH&size=1000x250&sensor=false&zoom=1&markers=color:blue
 		<% @users.each do |user|%> 
 			| <%= user.latitude %>, <%= user.longitude %> 
 		<% end %> "> 
+	</div>
 
 
 
