@@ -3,6 +3,7 @@
 <p class="game">
   <strong>Time:</strong>
   <%= @game.time.strftime("%a, %b %d @ %I:%M %p") %>
+  
 </p>
 
 <%= link_to 'Edit', edit_game_path(@game), :class => "btn btn-info btn-sm" %> 

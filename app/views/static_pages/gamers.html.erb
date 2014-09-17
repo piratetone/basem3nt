@@ -12,17 +12,21 @@
 
 
 
+	<img src = "http://maps.google.com/maps/api/staticmap?center=NewYork,NY&size=700x400&sensor=false&zoom=3&markers=color:blue
+		<% @users.each do |user|%> 
+			| <%= user.latitude %>, <%= user.longitude %> 
+		<% end %> "> 
 
 
 
 
 
-<%= image_tag "http://maps.google.com/maps/api/staticmap?size=700x400&sensor=false&zoom=1&markers=#{64.2008413}%2C#{-149.4936733} &markers=#{27.950575}%2C#{-82.4571776} " %>
 
 
- <div class="map"> <%= image_tag "http://maps.google.com/maps/api/staticmap?size=300x300&sensor=false&zoom=4&markers=#{current_user.latitude}%2C#{current_user.longitude}" %>
-    </div> 
 
 
- <div class="profileMap"> <%= image_tag "http://maps.google.com/maps/api/staticmap?size=700x400&sensor=false&zoom=1&markers=#{current_user.latitude}%2C#{current_user.longitude}=&markers=#{66.666}%2C#{66.6666}&markers=#{current_user.latitude}%2C#{current_user.longitude}=&markers=#{69.666}%2C#{68.6666}" %>
-    </div> 
+
+
+
+
+
