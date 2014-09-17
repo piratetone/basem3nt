@@ -35,6 +35,7 @@ GEM
       coderay (>= 1.0.0)
       erubis (>= 2.6.6)
       rack (>= 0.9.0)
+    bootstrap-datetimepicker-rails (0.0.11)
     bootstrap-sass (3.2.0.1)
       sass (~> 3.2)
     bootstrap_form (2.1.1)
@@ -79,6 +80,8 @@ GEM
       treetop (~> 1.4.8)
     mime-types (1.25.1)
     minitest (5.4.1)
+    momentjs-rails (2.8.3)
+      railties (>= 3.1)
     multi_json (1.10.1)
     multi_xml (0.5.5)
     multipart-post (2.0.0)
@@ -194,6 +197,7 @@ PLATFORMS
 DEPENDENCIES
   autoprefixer-rails
   better_errors
+  bootstrap-datetimepicker-rails
   bootstrap-sass (~> 3.2.0)
   bootstrap_form
   cocaine
@@ -202,6 +206,7 @@ DEPENDENCIES
   geocoder
   jbuilder (~> 2.0)
   jquery-rails
+  momentjs-rails (>= 2.8.1)
   omniauth
   omniauth-facebook
   paperclip

@@ -1,0 +1,9 @@
+<% if @game %>
+	<h1><%= @game.gamertag %></h1>
+	<p>Do you really want to accept  <%= @user.gamertag %>' invitation?</p>
+	<%= form_for @game, method: :post do |form| %>
+		<%= form.hidden_field :friend_id, value: @game.gamertag %>
+		<%= submit_tag "Yes, accept game", class: "btn btn-primary" %>
+		<%= link_to "Cancel", profile_path(@friend), class: 'btn' %>
+	<% end %>
+<% end %>

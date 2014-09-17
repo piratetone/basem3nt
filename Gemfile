@@ -59,10 +59,14 @@ gem 'omniauth-facebook'
 gem 'bootstrap_form'
 gem 'geocoder'
 gem 'statemachine'
+gem 'momentjs-rails', '>= 2.8.1'
+gem 'bootstrap-datetimepicker-rails'
+
 
 group :development do
   gem "better_errors"
 end
+
 
 gem 'simple_form'
 gem 'paperclip'

@@ -35,3 +35,6 @@
 
 - link the sign up button to the sign up page
 
+- fix the styling of the New Game page
+
+
