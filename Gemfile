@@ -61,7 +61,7 @@ gem 'geocoder'
 gem 'statemachine'
 gem 'momentjs-rails', '>= 2.8.1'
 gem 'bootstrap-datetimepicker-rails'
-
+gem "font-awesome-rails"
 
 group :development do
   gem "better_errors"
