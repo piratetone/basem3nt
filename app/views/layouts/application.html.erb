@@ -48,6 +48,7 @@
                   <%= f.email_field :email,  placeholder: "Email", :class => "input", autofocus: true, hide_label: :true %>
                   <%= f.password_field :password, placeholder:"password", :class=> "input", autocomplete: "off", hide_label: :true %>
               <%= f.submit  "Sign in", class: "btn btn-xs btn-success" %>
+
               <%= button_to('Sign up', new_user_registration_path, :class=>  'btn btn-xs btn-primary') %> 
 
                 </div> 

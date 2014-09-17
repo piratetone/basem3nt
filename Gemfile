@@ -58,6 +58,7 @@ gem 'omniauth'
 gem 'omniauth-facebook'
 gem 'bootstrap_form'
 gem 'geocoder'
+gem 'statemachine'
 
 group :development do
   gem "better_errors"
