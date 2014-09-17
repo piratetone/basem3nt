@@ -14,7 +14,7 @@
 ActiveRecord::Schema.define(version: 20140917053834) do
 
   create_table "games", force: true do |t|
-    t.datetime "time",  default: "0:00", null: false
+    t.datetime "time",  default: "12:00", null: false
     t.datetime "created_at"
     t.datetime "updated_at"
     t.integer  "uid"

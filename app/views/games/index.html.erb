@@ -3,9 +3,9 @@
 <table>
   <thead class="game">
     <tr>
-      <th class="th">Gamer Tag</th> &nbsp &nbsp
-      <th class="th">Time</th>
-      <th class="th">Gamer Tag</th>
+      <th class="th col-md-3">Gamer Tag</th> &nbsp &nbsp
+      <th class="th col-md-3">Time</th>
+      <th class="th col-md-3">Gamer Tag</th>
 
     </tr>
   </thead>
@@ -13,9 +13,9 @@
   <tbody class="game">
     <% @games.each do |game| %>
       <tr id="gameRow">
-        <td><%= game.user_id %></td>
+        <td>   <%= image_tag game.user.avatar.url, :class => "gamePic" %><%= game.user.gamertag   %></td>
         <td><%= link_to  game.time.strftime("%a %b %d @ %I:%M %p"), game %> </td> &nbsp &nbsp
-         <td><%= game.friend_id %> </td>
+         <td><%= game.friend_id  %> </td>
 
 
       </tr>

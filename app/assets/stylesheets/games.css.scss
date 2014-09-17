@@ -4,10 +4,14 @@
 
 
 
-.game{ font-size:1.5em;}
+.game{ font-size:1.5em; text-align:center;}
+
+.game th {text-align:center;}
 
 .th{min-width:20%; padding:2em;}
 
 #gameRow { 
 	border-bottom: solid 1px rgba(0,0,0,0.03);
 }
+
+.gamePic { width: 6em; border-radius: 3%;}

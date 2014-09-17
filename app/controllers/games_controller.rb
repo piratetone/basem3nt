@@ -55,6 +55,7 @@ class GamesController < ApplicationController
   end
 
 
+
   def destroy
     @game.destroy
     respond_to do |format|
@@ -72,3 +73,6 @@ class GamesController < ApplicationController
       params.require(:game).permit(:time, :user_id, :gamer, :gamertag, :friend_id, {id:[]})
     end
 end
+
+
+
