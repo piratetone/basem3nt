@@ -1,6 +1,9 @@
 class User < ActiveRecord::Base
 
   has_many :games
+  has_many :reverse_games, foreign_key: "friends_id", 
+              class_name: "games"
+
 
   # Include default devise modules. Others available are:
   # :confirmable, :lockable, :timeoutable and :omniauthable

@@ -18,18 +18,27 @@ class GamesController < ApplicationController
   end
 
 
+
+
   def create
-    # @game = Game.new(game_params)
-    # @game.gamer = current_user.full_name
+     @friend = User.where(gamertag: params[:game][:friend_id]).first
+     @user_game = Game.request(current_user, @friend)
+     @game = current_user.games.build(game_params) 
+       
+        if params[:game] && params[:game].has_key?(:friend_id) && 
+          @game.save
+          respond_to do |format|
+            format.html do
+              flash[:success] = "Game request sent to #{@friend.email}."
+              redirect_to profile_path(@friend)
+            end 
+            format.json { render json: @game.to_json }       
+           end
+         end
 
-    @game = current_user.games.build(game_params) 
+      
 
-    if @game.save
-      redirect_to @game, notice: 'Game was successfully created.'
-    else
-      render 'new'
     end
-  end
 
     # respond_to do |format|
     #   if @game.save
@@ -55,6 +64,14 @@ class GamesController < ApplicationController
   end
 
 
+  def accept
+    if @game.accept!
+      flash[:success] = "You are now friends with #{@game.friend.first_name}"
+    else
+      flash[:success] = "That friendship could not be accepted"
+    end
+    redirect_to user_friendships_path
+  end
 
   def destroy
     @game.destroy

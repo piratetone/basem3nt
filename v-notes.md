@@ -74,3 +74,6 @@
 - Google Maps
 	-- http://diginit.wordpress.com/2011/03/18/mapping-your-location-with-google-static-maps-api-tutorial/
 
+- Enum 
+	-- http://www.falsepositives.com/index.php/2014/08/22/simple-state-machines-in-rails-4-1-with-enum/
+
