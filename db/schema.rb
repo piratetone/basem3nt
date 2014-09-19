@@ -11,19 +11,21 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140917053834) do
+ActiveRecord::Schema.define(version: 20140919012948) do
 
   create_table "games", force: true do |t|
-    t.datetime "time",  default: "12:00", null: false
+    t.datetime "time"
     t.datetime "created_at"
     t.datetime "updated_at"
     t.integer  "uid"
     t.integer  "user_id"
     t.string   "state"
     t.integer  "friend_id"
+    t.integer  "status",     default: 0
   end
 
   add_index "games", ["state"], name: "index_games_on_state"
+  add_index "games", ["status"], name: "index_games_on_status"
   add_index "games", ["user_id", "friend_id"], name: "index_games_on_user_id_and_friend_id"
 
   create_table "invites", force: true do |t|
