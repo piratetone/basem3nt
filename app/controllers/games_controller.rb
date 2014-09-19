@@ -17,7 +17,9 @@ class GamesController < ApplicationController
   def edit
   end
 
-
+  def status
+    @games = Game.all
+  end
 
 
   def create

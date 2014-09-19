@@ -77,3 +77,8 @@
 - Enum 
 	-- http://www.falsepositives.com/index.php/2014/08/22/simple-state-machines-in-rails-4-1-with-enum/
 
+- Adding pages
+	-- http://guides.railsgirls.com/app/
+
+	
+

@@ -2,7 +2,11 @@ Rails.application.routes.draw do
   
   resources :games
 
+
   get 'profiles/show'
+
+  get "games/match"
+
 
   devise_for :users, :controllers => { :omniauth_callbacks => "omniauth_callbacks" }
   get 'static_pages/about'
@@ -19,13 +23,9 @@ Rails.application.routes.draw do
    root 'welcome#index'
 
    get '/about' => 'static_pages#about'
-
    get '/contact' => 'static_pages#contact'
-
    get '/gamers' => 'static_pages#gamers'
-
    get '/calendar' => 'static_pages#calendar'
-
 
    controller :sessions do
     get "login" => "sessions#new"
@@ -36,8 +36,6 @@ Rails.application.routes.draw do
     get 'users/:id' => 'users#show'
 
   get '/:id', to: 'profiles#show', as: :profile
-
-
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
