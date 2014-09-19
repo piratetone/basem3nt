@@ -1,13 +1,13 @@
 <p id="notice"><%= notice %></p>
-<%= image_tag current_user.avatar.url %>
+<%= image_tag @user.avatar.url %>
 <p>
   <strong>Name:</strong>
-  <%= current_user.full_name %>
+  <%= @user.full_name %>
 </p>
 
 <p>
   <strong>Email:</strong>
-  <%= current_user.email %>
+  <%= @user.email %>
 </p>
 
 <%= link_to 'Edit', edit_user_path(@user) %> |
