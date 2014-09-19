@@ -1,54 +1,54 @@
-<h1><%= current_user.gamertag %>'s Profile</h1>
+<h1><%= @user.gamertag %>'s Profile</h1>
 
 <div class="profile-page-info grid-4">
 
 
 	<div>
 		<h4>Location</h4>
-		<h5><%= current_user.location %></h5>
+		<h5><%= @user.location %></h5>
 	</div>
 
 
 	<hr>
 	<div>
 		<h4>Bio</h4>
-		<h5><%= current_user.bio %></h5>
+		<h5><%= @user.bio %></h5>
 	</div>
 	<hr>
 	
 	<div>
 		<h4>Gamer Tag</h4>
-		<h5><%= current_user.gamertag %>
+		<h5><%= @user.gamertag %>
 		</h5>
 	</div>
 	<hr>
 
 	<div>
 		<h4>Twitter</h4>
-		<h5><%= current_user.twitter %></h5>
+		<h5><%= @user.twitter %></h5>
 	</div>
 	<hr>
 
 	<div>
 		<h4>Twitch</h4>
-		<h5><%= current_user.twitch %></h5>
+		<h5><%= @user.twitch %></h5>
 	</div>
 	<hr>
 
 	<div>
 	<h4>PSN</h4>
-		<h5><%= current_user.psn %></h5>
+		<h5><%= @user.psn %></h5>
 		</div>
 	<hr>
 
 	<div>
 		<h4>Email</h4>
-		<h5><%= current_user.email %></5>
+		<h5><%= @user.email %></5>
 	</div> 
 
 </div>
 
-<div class="avatar"><%= image_tag current_user.avatar.url %>
+<div class="avatar"><%= image_tag @user.avatar.url %>
 </div>
-    <div class="map"> <%= image_tag "http://maps.google.com/maps/api/staticmap?size=300x300&sensor=false&zoom=4&markers=#{current_user.latitude}%2C#{current_user.longitude}" %>
+    <div class="map"> <%= image_tag "http://maps.google.com/maps/api/staticmap?size=300x300&sensor=false&zoom=4&markers=#{@user.latitude}%2C#{@user.longitude}" %>
     </div> 
