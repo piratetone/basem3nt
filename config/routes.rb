@@ -1,5 +1,11 @@
 Rails.application.routes.draw do
   
+  resources :posts
+
+  resources :topics
+
+  resources :forums
+
   resources :games
 
 

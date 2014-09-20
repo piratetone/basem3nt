@@ -11,7 +11,15 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140919012948) do
+ActiveRecord::Schema.define(version: 20140920215547) do
+
+  create_table "forums", force: true do |t|
+    t.string   "name"
+    t.text     "description"
+    t.integer  "user_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "games", force: true do |t|
     t.datetime "time"
@@ -31,6 +39,21 @@ ActiveRecord::Schema.define(version: 20140919012948) do
   create_table "invites", force: true do |t|
     t.integer  "attendee_id"
     t.integer  "attended_event_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "posts", force: true do |t|
+    t.text     "content"
+    t.integer  "user_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "topics", force: true do |t|
+    t.string   "name"
+    t.integer  "user_id"
+    t.datetime "time"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
