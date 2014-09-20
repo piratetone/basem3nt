@@ -1,13 +1,13 @@
-<h1> "Forums" </h1>
+<h1> Forums </h1>
  
 <table>
   <tr>
-    <th width="col-md-8">Forum</th>
-    <th width="col-md-4">Last Post</th>
+    <th class="col-md-7">Forum</th>
+    <th class="col-md-5">Last Post</th>
   </tr>
   <% for forum in @forums %>
     <tr>
-      <td><h4><%= link_to h(forum.name), forum_path(forum.id) %></h4>
+      <td><h2><%= link_to h(forum.name), forum_path(forum.id) %></h2>
         <small><%= forum.topics.count %> topics</small><br />
         <%= forum.description %></td>
       <td class="right"></td>
@@ -18,4 +18,4 @@
   <% end %>
 </table>
  
-<p><%= link_to "New Forum", new_forum_path %></p>
+<p style="padding-top:2em;"><%= link_to "New Forum", new_forum_path, :class => "btn btn-info" %></p>

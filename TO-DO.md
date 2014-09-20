@@ -36,4 +36,6 @@
 
 - fix the styling of the New Game page
 
+- link to current user's profile is broken due to the @user and not current user tag
+
 

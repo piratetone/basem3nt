@@ -1,13 +1,13 @@
-<%= simple_form_for(@topic) do |f| %>
-  <%= f.error_notification %>
-
-  <div class="form-inputs">
-    <%= f.input :name %>
-    <%= f.input :user_id %>
-    <%= f.input :time %>
-  </div>
-
-  <div class="form-actions">
-    <%= f.button :submit %>
-  </div>
-<% end %>
+	
+	<div class="container col-md-4">
+	<%= bootstrap_form_for(@topic) do |f| %>
+		<%= flash[:alert] %> 
+	  <div><br>
+	    <%= f.text_field :name, hide_label: true, :placeholder => "Make a bottle of wine..." %>
+	  </div><br>
+	 
+	  <div><br>
+	    <%= f.submit "Bottle it", :class => "btn btn-info " %>
+	  </div>
+	<% end %>
+	</div>
