@@ -3,6 +3,9 @@ class User < ActiveRecord::Base
   has_many :games
   has_many :reverse_games, foreign_key: "friends_id", 
               class_name: "games"
+  has_many :forums
+  has_many :posts
+  has_many :topics
 
 
   # Include default devise modules. Others available are:

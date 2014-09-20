@@ -24,7 +24,10 @@ class ForumsController < ApplicationController
   # POST /forums
   # POST /forums.json
   def create
-    @forum = Forum.new(forum_params)
+     # @forum = Forum.new(forum_params) 
+     @forum = current_user.forums.new(forum_params)
+
+     #@forum = current_user.forum.build(forum_params) 
 
     respond_to do |format|
       if @forum.save

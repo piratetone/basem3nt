@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140920215547) do
+ActiveRecord::Schema.define(version: 20140920220958) do
 
   create_table "forums", force: true do |t|
     t.string   "name"
@@ -48,6 +48,7 @@ ActiveRecord::Schema.define(version: 20140920215547) do
     t.integer  "user_id"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.integer  "topic_id"
   end
 
   create_table "topics", force: true do |t|
@@ -56,6 +57,7 @@ ActiveRecord::Schema.define(version: 20140920215547) do
     t.datetime "time"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.integer  "forum_id"
   end
 
   create_table "users", force: true do |t|
