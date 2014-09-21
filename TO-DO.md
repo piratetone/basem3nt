@@ -11,7 +11,11 @@
 
 - create leagues/groups - 9/16
 
+- get the form to spit out data to two tables
 
+- once an event is created, it should trigger an action alerting the other user to accept or decline it along with sending out an email
+	- a page needs to be created for pending games
+	
 
 
 
