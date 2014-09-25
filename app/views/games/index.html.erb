@@ -17,8 +17,7 @@
         <td>   <%= image_tag game.user.avatar.url, :class => "gamePic" %><%= game.user.gamertag   %></td>
         <td><%= link_to  game.time.strftime("%a %b %d @ %I:%M %p"), game %> </td> &nbsp &nbsp
          <td><%= game.friend_id  %> </td>
-
-
+ 
       </tr>
     <% end %>
   </tbody>

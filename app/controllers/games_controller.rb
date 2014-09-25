@@ -6,6 +6,7 @@ class GamesController < ApplicationController
   end
 
   def show
+    @games = Game.all 
     @game = Game.find_by(params[:id])
   end
 
@@ -32,7 +33,7 @@ class GamesController < ApplicationController
           respond_to do |format|
             format.html do
               flash[:success] = "Game request sent to #{@friend.email}."
-              redirect_to profile_path(@friend)
+              redirect_to games_path
             end 
             format.json { render json: @game.to_json }       
            end

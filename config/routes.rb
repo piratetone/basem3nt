@@ -32,6 +32,8 @@ Rails.application.routes.draw do
    get '/contact' => 'static_pages#contact'
    get '/gamers' => 'static_pages#gamers'
    get '/calendar' => 'static_pages#calendar'
+   get '/statuses' => 'static_pages#statuses'
+
 
    controller :sessions do
     get "login" => "sessions#new"
