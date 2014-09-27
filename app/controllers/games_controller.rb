@@ -10,6 +10,7 @@ class GamesController < ApplicationController
     @game = Game.find_by(params[:id])
   end
 
+
   def new
 #    @game = Game.new
      @game = current_user.games.build
@@ -55,7 +56,7 @@ class GamesController < ApplicationController
   # end
 
   def update
-    respond_to do |format|
+     respond_to do |format|
       if @game.update(game_params)
         format.html { redirect_to @game, notice: 'Game was successfully updated.' }
         format.json { render :show, status: :ok, location: @game }
@@ -90,7 +91,7 @@ class GamesController < ApplicationController
     end
 
     def game_params
-      params.require(:game).permit(:time, :user_id, :gamer, :gamertag, :friend_id, {id:[]})
+      params.require(:game).permit(:time, :user_id, :gamer, :gamertag, :friend_id, :status,  {id:[]})
     end
 end
 

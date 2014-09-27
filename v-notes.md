@@ -80,5 +80,6 @@
 - Adding pages
 	-- http://guides.railsgirls.com/app/
 
-	
+- enums 
+	-- https://www.codemy.net/posts/rails-4-1-enum	
 

@@ -1,0 +1,37 @@
+<% @games = Game.all %>
+
+<% @games.each do |game| %>
+<% if game.user_id[2]  %> 
+
+
+  <%= game.user_id %> 
+<%= game.id %>
+ <br>
+ <%= game.time %>
+ <%= game.user.gamertag %>
+  
+ 	<% end %> 
+ 	<% end %> 
+ 
+
+
+
+
+<br>
+
+<%= User.select(3) %>
+<%= User.find(2).games.all %>
+<br> 
+<%= User.find(3).games.all %>
+<br><b>
+<%= current_user.games.all %>
+
+ <br><br>
+
+ 
+<%= Game.last.user.gamertag  %>
+<%= User.find(2).games.last.friend.gamertag %>
+<%= User.find(3).games.last.friend.gamertag %>
+
+
+

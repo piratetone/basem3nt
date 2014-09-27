@@ -6,6 +6,7 @@ class User < ActiveRecord::Base
   has_many :forums
   has_many :posts
   has_many :topics
+  has_many :friends
 
 
   # Include default devise modules. Others available are:

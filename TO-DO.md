@@ -26,8 +26,7 @@
 - choose file button
 	-- hide it
 
-- fix the sign-in links
-
+ 
 - fix the margins of the body
 
 - fix flash for signing out or error
@@ -41,5 +40,7 @@
 - fix the styling of the New Game page
 
 - link to current user's profile is broken due to the @user and not current user tag
+
+- on the status page, give the gamertags
 
 
