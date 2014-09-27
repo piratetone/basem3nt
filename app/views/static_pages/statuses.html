@@ -1,14 +1,14 @@
 
 
 
-
-<h1>Game Statuses</h1> 
-
- 	<h3>Pending Approval</h3>
+<div class="statuses"> 
+ 	<div class="inStatus"> 
+	<div class="statusCol"> 
+	 	<h3>Pending Games</h3>
  		<% @games = Game.all %>
  		<% @games.each do |game| %>
- 		 	<% if current_user == game.friend %> 
- 		 		
+ 		 	<% if current_user == game.friend && game.status = "pending" %> 
+ 		 	<div class="odd"> 
  		 	<strong> Against: 	<%= game.user.gamertag %></strong><br>
 			 <strong>Game:</strong> 	<%= game.id %><br>
 			 <strong>Time:</strong>   	<%= game.time.strftime("%a, %b %d @ %I:%M %p") %><br>
@@ -17,36 +17,46 @@
 	     	 	<%= bootstrap_form_for game,  method: :put do |f| %>
 		    		<%= f.text_field :status, hide_label: "true", :type => "hidden", value: "approved" %>
 		    		<%= f.submit "Approve", :class => "btn btn-info" %>
-		    		<hr>
+		    	</div>
 				<% end %>
 			<% end %>
 		<% end %>
+	</div>
 
-
-	<h3> Active </h3>
+  
+	<div class="statusCol"> 
+	<h3> Active Games </h3>
 		<% @games = Game.approved.all %>
 		<% @games.each do |game| %>
-			<% if game.friend == current_user || game.user == current_user %>
-		 	 	<strong> Home: <%= game.user.gamertag %></strong><br>
-		   	 	<strong> Away: <%= game.friend.gamertag %></strong><br>		 
-		   	 	<strong>Game:</strong>  	 <%=game.id %><br>
-				<strong>Time:</strong>    <%= game.time.strftime("%a, %b %d @ %I:%M %p") %><br>
+ 				<% if game.friend == current_user || game.user == current_user %>
+ 				<div class="odd"> 
+			 	 	<strong> Home: <%= game.user.gamertag %></strong><br>
+			   	 	<strong> Away: <%= game.friend.gamertag %></strong><br>		 
+			   	 	<strong>Game:</strong>  	 <%=game.id %><br>
+					<strong>Time:</strong>    <%= game.time.strftime("%a, %b %d @ %I:%M %p") %><br>
 		<!--  		<strong>Status:</strong>  <%= game.status %> 
-		 -->	 <hr>
- 			<% end %> 
- 		<% end %>	
+		 -->	</div>
+ 				<% end %> 
+ 			<% end %>	
+ 			</div>
 
 
+ 	<div class="statusCol"> 
 	<h3> All Games </h3> 	
 		<% @games = Game.all %>
 		<% @games.each do |game| %>
-	   	 	<strong> Home: <%= game.user.gamertag %></strong><br>
-	   	 	<strong> Away: <%= game.friend.gamertag %></strong><br>		 
-	   	 	<strong>Game:</strong>  	 <%=game.id %><br>
-			<strong>Time:</strong>    <%= game.time.strftime("%a, %b %d @ %I:%M %p") %><br>
-	 		<strong>Status:</strong>  <%= game.status %> 
-	 		<br><hr>
+			<div class="odd"> 
+		   	 	<strong> Home: <%= game.user.gamertag %></strong><br>
+		   	 	<strong> Away: <%= game.friend.gamertag %></strong><br>		 
+		   	 	<strong>Game:</strong>  	 <%=game.id %><br>
+				<strong>Time:</strong>    <%= game.time.strftime("%a, %b %d @ %I:%M %p") %><br>
+		 		<strong>Status:</strong>  <%= game.status %> 
+		 	</div> 
+
 		<% end %> 
+	</div>
+  </div>
+</div>
  
 
 
