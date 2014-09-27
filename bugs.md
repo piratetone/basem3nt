@@ -30,4 +30,27 @@ end
 	-- https://teamtreehouse.com/forum/problem-starting-server
 
 
+- adding a button to change a single attribute
+	-- 	<% @games = User.find(current_user.id).games.pending.all %>
+   	 	<% @games.each do |game| %>
+	   	 	<strong> Against: <%= game.friend.gamertag %></strong><br>
+			 Game: <%= game.id %><br>
+			 Time:   <%= game.time.strftime("%a, %b %d @ %I:%M %p") %><br>
+	 		 status: <%= game.status %>
+
+	     	<%= bootstrap_form_for game,  method: :put do |f| %>
+		    	<%= f.text_field :status, hide_label: "true", :type => "hidden", value: "approved" %>
+		    	<%= f.submit "Approve", :class => "btn btn-info" %>
+			<% end %>
+			<hr> 
+		<% end %>
+
+- with the gamertag and getting a no method error
+	-- when there saved games without friends, in a loop, Rails pulls up a blank and can't find the gamertag for it, causing it to crash
+
+
+
+
+		
+
 		

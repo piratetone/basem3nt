@@ -1,37 +1,26 @@
 
 
-
-
 <div class="col-md-4"> 
 <%= bootstrap_form_for(@game) do |f| %>
   	<%= flash[:alert] %> 
 
-  	<%= f.date_select :time, :class => "datepicker" %>
-  	<%= f.time_select :time, :class => "timepicker" %>
-
-  <div class="form-inputs">
-    <%= f.text_field :friend_id, label: "Against" %>
-  </div>
-
-    <div class="form-inputs">
-    <%= f.text_field :status, value: "active" %>
-  </div>
-
-  <div class="form-actions">
+    <%= f.time_select :time, :class => "timepicker" %>
+  	<%= f.date_select :time, label: "Date", :class => "datepicker" %>
+    <%= f.text_field :friend_id, required: true, label: "Against" %>
     <%= f.button :submit, :class => "btn btn-info" %>
-  </div>
+ 
 
-
-</div> 
-
-
- <script type="text/javascript">
-  $(function() {
-    $('#datetimepicker1').datetimepicker({
-      language: 'pt-BR'
+  <script type="text/javascript">
+    $(function() {
+      $('#datetimepicker1').datetimepicker({
+       language: 'pt-BR'
+       pickYear: false
+      });
     });
-  });
-</script>
+
+ 
+  </script>
+
 <% end %>
 
 

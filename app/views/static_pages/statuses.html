@@ -7,13 +7,13 @@
 <h3> Pending Approval </h3>
 	<% @games = User.find(current_user.id).games.pending.all %>
    	 	<% @games.each do |game| %>
-	   	 	 Against: <%= game.friend.gamertag %><br>
-			 Game: <%= game.id %><br>
-			 Time: <%= game.time %><br>
+	   	 	<strong> Against: <%= game.friend.gamertag %></strong><br>
+			 Game: 	 <%= game.id %><br>
+			 Time:   <%= game.time.strftime("%a, %b %d @ %I:%M %p") %><br>
 	 		 status: <%= game.status %>
 
 	     	 <%= bootstrap_form_for game,  method: :put do |f| %>
-		    	<%= f.text_field :status, :type => "hidden", value: "approved" %>
+		    	<%= f.text_field :status, hide_label: "true", :type => "hidden", value: "approved" %>
 		    	<%= f.submit "Approve", :class => "btn btn-info" %>
 		<% end %>
 		<hr> 
@@ -21,13 +21,12 @@
 	<% end %>
 
 
- <h3> All Games </h3>
-	
+ <h3> All Games </h3> 	
 	<% @games = User.find(current_user.id).games.all %>
 	<% @games.each do |game| %>
-		 Game: <%= game.id %><br>
-		 Time: <%= game.time %><br>
-		 friend: <%= game.friend %>
+		 <strong>  friend: <%= game.friend.gamertag %> </strong> <br> 
+		 Game: 	 <%= game.id %><br>
+		 Time:   <%= game.time.strftime("%a, %b %d @ %I:%M %p") %><br>
  		 status: <%= game.status %> 
  		 <br><hr>
 	<% end %> 
@@ -37,11 +36,11 @@
 	 <% @games = User.find(current_user.id).games.approved.all %>
 
 		<% @games.each do |game| %>
-			 Game: <%= game.id %><br>
-			 Time: <%= game.time %><br>
+			 Game:   <%= game.id %><br>
+			 Time:   <%= game.time.strftime("%a, %b %d @ %I:%M %p") %><br>
 			 friend: <%= game.friend %><br>
 			 status: <%= game.status %> 
-	 	 	 <br><br>
+	 	 	 <br><hr>
  		<% end %> 
 
 
