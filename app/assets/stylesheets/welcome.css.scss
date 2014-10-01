@@ -7,7 +7,7 @@
 
 
 .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-default .navbar-nav > .active > a:focus { 
-    background-color: #000000 !important; color: red !important; }
+    background-color: #000000 !important; color: red !important; text-decoration: none !important;}
 
 .navbar-default  {
   opacity:.8;
@@ -16,6 +16,7 @@
   height: 2em; 
   color: #FFFFFF !important;
   letter-spacing: .2em;
+  line-height: 2em;
   font-weight: 600 !important;
 }
 

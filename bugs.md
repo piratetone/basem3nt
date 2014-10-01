@@ -1,3 +1,6 @@
+
+
+
 -- Passing Current User --
 
 Within the create method of any controller, if you'd like to pass the current_user's information. 
@@ -15,6 +18,15 @@ end
 
 			      v's bugs
 ----------------------------------------
+
+- linking the user's name to the profile page
+		-<p><%= link_to current_user.full_name, "#{current_user.gamertag}"
+
+
+
+- bootstrap drop down menu 
+	- http://stackoverflow.com/questions/10218587/twitter-bootstrap-drop-down-suddenly-not-working
+
 
 - Bootstrap alert-errors 
 	-- Fixing a bug where the alert error from an failed sign-in  wasn't taking any styling from the Bootstrap
