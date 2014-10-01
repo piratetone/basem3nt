@@ -1,5 +1,8 @@
 Rails.application.routes.draw do
   
+  devise_for :users, :controllers => { :omniauth_callbacks => "omniauth_callbacks" }
+
+  
   resources :posts
 
   resources :topics
@@ -14,7 +17,6 @@ Rails.application.routes.draw do
   get "games/match"
 
 
-  devise_for :users, :controllers => { :omniauth_callbacks => "omniauth_callbacks" }
   get 'static_pages/about'
 
 
@@ -41,9 +43,16 @@ Rails.application.routes.draw do
     delete "logout" => "sessions#destroy"
   end
 
-    get 'users/:id' => 'users#show'
+  get 'users/:id' => 'users#show'
 
   get '/:id', to: 'profiles#show'
+
+
+  # devise_scope :user do
+  #   get '/sign_in', to: 'users/sessions#new'
+  #   get '/sign_out', to: 'users/sessions#destroy'
+  # end
+
 
     # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
