@@ -62,6 +62,7 @@ gem 'statemachine'
 gem 'momentjs-rails', '>= 2.8.1'
 gem 'bootstrap-datetimepicker-rails'
 gem "font-awesome-rails"
+gem "twitter-bootstrap-rails"
 
 group :development do
   gem "better_errors"

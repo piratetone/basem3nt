@@ -39,8 +39,14 @@
 } 
  
 
+
+li.active { opacity: .4; }
+
 .navbar {
   opacity:.8;
+  background-color: #000; 
+  border-color:#000;
+  height: 2em; 
 }
 
 body {
@@ -64,11 +70,12 @@ body {
 /*   index  layout   */
 
 .sign {
-  float:left;
+  float:right;
   position:relative;
-  display: -webkit-box;
-  
+  display: -webkit-box;  
 }
+
+.sign > p { padding: .5em; }
 
 .logBoxes {
   position:initial;
