@@ -1,15 +1,6 @@
 /*
  * This is a manifest file that'll be compiled into application.css, which will include all the files
  * listed below.
- *
- * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
- * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
- *
- * You're free to add application-wide styles to this file and they'll appear at the bottom of the
- * compiled file so the styles you add here take precedence over styles defined in any styles
- * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
- * file per style scope.
- *
  *= require_tree .
  *= require_self
  *= require rails_bootstrap_forms
@@ -32,30 +23,11 @@
 }  
  
   @font-face {
-  font-family: 'Gotham';    
-  src: url('fonts/Gotham-Medium.ttf') format('truetype');
+  font-family: 'jo';    
+  src: url('assets/jo.otf') format('truetype');
   font-weight: normal;
   font-style: normal;
 } 
- 
-
-
-li.active { opacity: .4; }
-
-.navbar {
-  opacity:.8;
-  background-color: #000; 
-  border-color:#000;
-  height: 2em; 
-}
-
-body {
-	padding-top: 6em;
-	padding-bottom:4em;
- 	margin:0 !important;
- 	padding-left:0;
- 	width:100%;
-}
 
 
 @font-face {
@@ -67,12 +39,24 @@ body {
 
 
 
+
+body {
+  padding-bottom:4em;
+  margin:0 !important;
+  padding-left:0;
+  width:100%;
+}
+
+
+
+
 /*   index  layout   */
 
 .sign {
   float:right;
   position:relative;
   display: -webkit-box;  
+  top: .555em; 
 }
 
 .sign > p { padding: .5em; }
@@ -97,10 +81,6 @@ body {
 }
 
 
-
-
-
-
 .alert {
 	margin-top: 10px; 
 }
@@ -121,7 +101,6 @@ body {
 
  
 
-
  /*  Sign-in page    */
 
 
@@ -133,7 +112,8 @@ body {
  }
 
 .input {
-  width:10em;
+  width:6em;
+  height:2em;
   margin:0;
   padding:0;
   
@@ -152,38 +132,3 @@ body {
 
 }
 
-
-
-
-
-
-
-
-/*
-
-
-
-
-.bigB{
-  background:blue;
-  top: 50%;
-  right:50%;
-  position:relative;
-}
-
-.bigB div{
-  float:left;
-  margin: 0;
-  padding:0;
-}
-
-.bigB input {
-  margin: .4em; 
-  position:relative;
-  width:7em;
-}
-
-
-
-
-*/

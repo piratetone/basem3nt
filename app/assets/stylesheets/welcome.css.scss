@@ -3,6 +3,43 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 
+/*     nav bar    */
+
+
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-default .navbar-nav > .active > a:focus { 
+    background-color: #000000 !important; color: red !important; }
+
+.navbar-default  {
+  opacity:.8;
+  background-color: #000 !important; 
+  border-color:#000 !important;
+  height: 2em; 
+  color: #FFFFFF !important;
+  letter-spacing: .2em;
+  font-weight: 600 !important;
+}
+
+.nav  > li > a { color: #FFFFFF !important; }
+
+.nav  > li > a:hover { opacity: .7 !important; }
+
+.sign > p > a { color: #FFFFFF; }
+
+.navbar-nav .navbar-default .nav > li > a { 
+    color: #FFF !important; 
+    }
+
+.navbar-default .navbar-brand {
+color: #FFFFFF !important;
+}
+
+a:hover {
+opacity: .7; 
+text-decoration: none !important;
+}
+
+/*   end of nav bar   */
+
 
 header.band {
     background: #4b371f;
@@ -53,7 +90,7 @@ a.button {
 }
  
 a.button:hover {
-    background: #ab3009;
+    background: red;
 }
 
 

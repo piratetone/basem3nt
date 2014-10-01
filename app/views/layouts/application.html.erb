@@ -8,50 +8,47 @@
 </head>
 <body>
 
-<%= nav_bar :fixed => :top, :responsive => true, :brand => "Basem3nt", :class =>"navbar-inverse navbar-fixed-top navbar" do %>
+<%= nav_bar :static => :top, :responsive => true, :brand => "Basem3nt", :class =>"navbar-fixed-top navbar ", :style => "color:#FFFFFF;" do %>
      <%= menu_group do %>
-        <%= menu_item "Home", root_path %>
-        <%= menu_item "contact", contact_path %>
-        <%= menu_item "gamers", gamers_path %>
-        <%= menu_item "games", games_path %>
-        <%= menu_item "forums", forums_path %>
-        <%= menu_item "statuses", statuses_path %>
-    <% end %>
+         <%= menu_item "HOME", root_path %>
+        <%= menu_item "GAMES", games_path %>
+        <%= menu_item "FORUMS", forums_path %>
+        <%= menu_item "STATUSES", statuses_path %>
+
+          <%= drop_down "MORE" do %>
+            <%= menu_item "CONTACT", contact_path %>
+            <%= menu_item "GAMERS", gamers_path %>
+            <%= menu_item "CALENDAR", calendar_path %>
+          <% end %>
+
+     <% end %>
 
     <% if current_user %>
       <div class="sign form-group">
         <p><%= link_to current_user.full_name, "../profiles/show" %></p>
-        <p><%= link_to "Settings", edit_user_registration_path, method: :get, :class =>  "navbar-link, ../users/edit" %></p>
-        <p><%= link_to "Logout", destroy_user_session_path, method: :delete, :class => 'navbar-link, logInLogOut' %></p>
+        <p><%= link_to "SETTING", edit_user_registration_path, method: :get, :class =>  "navbar-link, ../users/edit" %></p>
+        <p><%= link_to "SIGN OUT", destroy_user_session_path, method: :delete, :class => 'navbar-link, logInLogOut' %></p>
       </div>
 
        <% else %>
         <%= menu_group :pull => :right do %>
             <%= bootstrap_form_for @user, :url => session_path(:user) do |f| -%>
               <div class="sign form-group">
-                <p><%= f.email_field :email,  placeholder: "Email", :class => "input", autofocus: true, hide_label: :true %>
+                <p><%= f.email_field :email,  placeholder: "EMAIL", :class => "input", autofocus: true, hide_label: :true %>
                 </p>
-                <p><%= f.password_field :password, placeholder:"password", :class=> "input", autocomplete: "off", hide_label: :true %>
+                <p><%= f.password_field :password, placeholder:"PASSWORD", :class=> "input", autocomplete: "off", hide_label: :true %>
                   </p>
-                  <p><%= f.submit "Sign in", :class=>  'btn btn-xs btn-success' %>
+                  <p><%= f.submit "SIGN IN", :class=>  'btn btn-xs btn-success' %>
                   </p>
                 <% end -%>
-                <p><%= link_to "Sign Up", new_user_registration_path, :class=>  'btn btn-xs btn-primary' %>
+                <p><%= link_to "SIGN UP", new_user_registration_path, :class=>  'btn btn-xs btn-primary' %>
                 </p>
             <% end %>
         <% end %>
     <% end %>
-
-    <div class=" container">
-      <% flash.each do |type, message| %> 
-        <div class="alert <%= flash_class(type) %>"> 
-          <button class="close" data-dismiss="alert">x</button> 
-          <%= message %>
-        </div>  
-      <% end %>
+    <%= bootstrap_flash %>
 
       <%= yield %>         
    
-    </div> 
   </body>
 </html>
