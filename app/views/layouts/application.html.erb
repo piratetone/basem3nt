@@ -25,8 +25,8 @@
      <% end %>
 
     <% if current_user %>
-      <div class="sign form-group">
-        <p><%= link_to current_user.full_name, "#{current_user.gamertag}"
+      <div class="sign form-group hideS">
+        <p><%= link_to current_user.gamertag, "#{current_user.gamertag}"
  %></p>
         <p><%= link_to "SETTING", edit_user_registration_path, method: :get, :class =>  "navbar-link, ../users/edit" %></p>
         <p><%= link_to "SIGN OUT", destroy_user_session_path, method: :delete, :class => 'navbar-link, logInLogOut' %></p>
@@ -50,9 +50,10 @@
     <% end %>
     <%= bootstrap_flash %>
 <div class="mainBody">
-  <div class="container">
       <%= yield %>      
-    </div>
 </div>
+<div class="col-md-12 footer">
+  <div>AN <br> UNTAMED KILLER <br>WHALE PRODUCTION</div>
+</div> 
   </body>
 </html>

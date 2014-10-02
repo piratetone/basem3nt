@@ -16,6 +16,8 @@
 	border-bottom: solid 1px rgba(0,0,0,0.03);
 	}
 	
+- nth child
+	- http://nthmaster.com/
 
 
    sublime notes 
@@ -83,3 +85,13 @@
 - enums 
 	-- https://www.codemy.net/posts/rails-4-1-enum	
 
+
+
+fonts
+--------------------
+
+- helvetica 
+	- http://www.fontspace.com/psyops/crash-numbering/5196.charmap
+
+- numbers 
+	- http://www.fontspace.com/psyops/crash-numbering/5196.charmap

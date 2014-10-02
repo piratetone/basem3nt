@@ -3,11 +3,14 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 
-/*     nav bar    */
-
+/*     NAV     BAR   */
 
 .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-default .navbar-nav > .active > a:focus { 
-    background-color: #000000 !important; color: red !important; text-decoration: none !important;}
+    background-color: #000000 !important; 
+    color: red !important; 
+    text-decoration: none !important;
+    opacity:.9;
+    }
 
 .navbar-default  {
   opacity:.8;
@@ -15,61 +18,223 @@
   border-color:#000 !important;
   height: 2em; 
   color: #FFFFFF !important;
-  letter-spacing: .2em;
-  line-height: 2em;
-  font-weight: 600 !important;
+  letter-spacing: .22em;
+  line-height: 3em;
+  font-size:.9em !important; 
+  font-weight: 650; 
+
 }
 
-.nav  > li > a { color: #FFFFFF !important; }
+.band { height:22em !important; }
 
-.nav  > li > a:hover { opacity: .7 !important; }
+.navbar {
+    margin:0 !important; 
+}
+.nav  > li > a { 
+    color: #FFFFFF !important; 
+    }
 
-.sign > p > a { color: #FFFFFF; }
+.nav  > li > a:hover { 
+    opacity: .7 !important; 
+    }
+
+.sign > p > a { 
+    color: #FFFFFF; 
+    font-size: 1em; 
+    }
 
 .navbar-nav .navbar-default .nav > li > a { 
     color: #FFF !important; 
     }
 
 .navbar-default .navbar-brand {
-color: #FFFFFF !important;
-}
+    color: #FFFFFF !important;
+    }
 
 a:hover {
 opacity: .7; 
 text-decoration: none !important;
+font-weight: 550;
 }
 
-/*   end of nav bar   */
 
-
-header.band {
-    background: #4b371f;
-    color: white;
-    text-align: center;
-    padding: 10% 0 15% 0;
-    color: red; 
+.navbar-brand{
+    font-family:ralebold !important; 
+    font-size: 2em !important;
 }
 
-header.band h1 {
-    font-size: 3em;
-    line-height: 1em;
-    margin-bottom: 1em;
+
+/*   END   OF   NAV   BAR     */
+
+
+
+/*        SECTION     1       */ 
+
+.welTitle  {
+    left:-16em !important; 
+    position:fixed;
+    z-index:2;
+    font-family: kel !important; 
+    margin-top:3.2em; 
+    color:#323232;
+    }
+
+div.welTitle > p  {
+    font-size: 4em;
+    margin:0 !important;
+    line-height:1em !important;
+    letter-spacing:-.06em; 
 }
 
-#basement {
-	width: 100%;
-	position: absolute;
-	clear: both;
-	left: 0;
-	top: -7em;
-	height:30em;
-	
+div.welTitle > p:nth-child(2)  {
+    font-size: 6.5em;
+    margin:0 0 0 4em !important;
 }
 
-.welcome {
-	top:12em;
+.sect2inner {
+    margin-top:9em;
 	position:relative;
 }
+
+.weldiv{
+    font-family: rale; font-weight: 800 !important;
+}
+
+/*    END    SECTION     1      */ 
+
+
+
+
+/*        SECTION     2       */ 
+
+
+div.welSect2{
+    z-index:3;
+    height: 55em; 
+    background-color: #FFFFFF; 
+    position:relative;
+    font-family: crasns !important;
+
+}
+
+.sect3inner {
+    margin:3em 0; 
+}
+
+.welP1 {
+    font-size:4em;
+    margin:0 0 2em 0;
+}
+
+p.welP2 {
+    margin: 0 0 0 2em;
+    line-height: 1.4em;
+    letter-spacing: 0.1em;
+    font-size: 1.1em;
+    }
+
+
+p.welP3 {
+    clear:both;
+    float:right;
+    margin: 9em 4em  0 0;
+    line-height: 1.4em;
+    letter-spacing: 0.1em;
+    font-size: 1.1em;
+    }
+
+p.welP4 {
+    clear:both; 
+    margin: 6em 0 0 8em;
+    line-height: 1.4em;
+    letter-spacing: 0.1em;
+    font-size: 1.1em;
+    }
+
+.dreams{
+    font-size: 3.2em;
+    margin: 0 0 0 .7em; 
+    font-family: crasns !important;
+    opacity:.94;
+}
+
+.dreamers{
+    font-size: 3em; 
+    margin: 0 0 0 .7em;
+    font-family: crasns !important;
+    opacity:.93;
+}
+/*     END     SECTION   2       */ 
+
+
+
+
+
+
+
+/*      SECTION    3        */ 
+
+
+.welSect3 {
+    z-index:5;
+    height: 55em; 
+    background-color: #cccccc; 
+    position: relative;
+    z-index: 5;
+    font-family: rale; 
+}
+
+.sect3inner > p { 
+    line-height: 2em;
+    clear: both;
+    font-size: 1em;
+}
+
+p.wel3P1 {
+    font-size: 5em; 
+    margin: 0 0 0 1em;     
+ }
+
+p.wel3P2 {
+    clear:both;
+    margin: 1em 0 0 1em !important;
+    font-size: 2.8em;
+    position:relative;
+ }
+
+.wel3P3 {
+    font-size:3em !important;
+    margin: 1em 0 0 11em;     
+ }
+
+.join {
+    font-size:1.3em;
+    font-family:crasns;
+}
+
+.start {
+    font-size:1.5em;
+    font-family:crasns;
+}
+
+.repeat {
+    font-size:1.4em;
+    font-family:crasns;
+}
+
+.wel3P4 {
+     margin:2em 0 0 1em;
+     font-size:1em !important;
+ } 
+
+ .wel3P5 {
+     margin:1em 0 0 8em;
+     font-size:3.4em !important;
+ } 
+
+
+/*     END     SECTION   3       */ 
+
 
 
 a.button {
@@ -90,9 +255,42 @@ a.button {
     transition: background 0.2s ease-out;  /* Firefox 16+, Opera 12.50+ */
 }
  
-a.button:hover {
-    background: red;
+.sign {
+    top: .7em !important; 
+    line-height:1.3em;    }
+.sign > p:nth-child(n+2) {
+    font-size: .8em;
+    display: table-row
+
 }
+.hideS > p:nth-child(n+2) {
+     visibility: hidden;
+}
+
+.hideS:hover > p:nth-child(n+2) {
+     visibility: visible;
+}
+
+
+
+.footer {
+    background:#121212; 
+    height:10em; 
+    position:relative; 
+    z-index:12; 
+
+}
+
+div.footer > div { 
+    margin-top:3em; 
+    text-align:center; 
+    font-family: ralebold !important;
+    font-weight:bold;
+    color:#FFFFFF; 
+    font-size:1em; 
+    line-height:1.3em;
+    }
+
 
 
 @media only screen and (min-width: 767px) { 

@@ -8,41 +8,50 @@
  
  */
 
-
-
 @import "bootstrap-sprockets";
 @import "bootstrap";
 @import 'bootstrap-datetimepicker';
 
 
 @font-face {
-  font-family: 'rale';    
-  src: url('assets/rale.ttf') format('truetype');
+  font-family:'rale';    
+  src: url('rale.otf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }  
  
-  @font-face {
+@font-face {
+  font-family:'ralebold';    
+  src: url('raleBold.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}  
+ 
+@font-face {
   font-family: 'jo';    
-  src: url('assets/jo.otf') format('truetype');
+  src: url('jo.otf') format('truetype');
   font-weight: normal;
   font-style: normal;
 } 
 
 
 @font-face {
-  font-family: 'jo';    
-  src: url('fonts/jo.ttf') format('truetype');
+  font-family: 'crasns';    
+  src: url('crasns.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+} 
+
+@font-face {
+  font-family: 'kel';    
+  src: url('kelvetica.otf') format('truetype');
   font-weight: normal;
   font-style: normal;
 } 
 
 
-
-
-.mainBody {
-  padding-bottom:4em;
-  width:100%;
+body {
+  line-height:0 !important;
 }
 
 
