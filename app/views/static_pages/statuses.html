@@ -31,7 +31,7 @@
  				<% if game.friend == current_user || game.user == current_user %>
  				<div class="odd"> 
 			 	 	<strong> Home: <%= game.user.gamertag %></strong><br>
-			   	 	<strong> Away: <%= game.friend.gamertag %></strong><br>		 
+			   	 	<strong> Away: <%= game.user.gamertag %></strong><br>		 
 			   	 	<strong>Game:</strong>  	 <%=game.id %><br>
 					<strong>Time:</strong>    <%= game.time.strftime("%a, %b %d @ %I:%M %p") %><br>
 		<!--  		<strong>Status:</strong>  <%= game.status %> 
@@ -41,20 +41,20 @@
  			</div>
 
 
- 	<div class="statusCol"> 
+ 	<!-- <div class="statusCol"> 
 	<h3> All Games </h3> 	
 		<% @games = Game.all %>
 		<% @games.each do |game| %>
 			<div class="odd"> 
 		   	 	<strong> Home: <%= game.user.gamertag %></strong><br>
-		   	 	<strong> Away: <%= game.friend.gamertag %></strong><br>		 
+		   	 	<strong> Away: <%= game.user.gamertag %></strong><br>		 
 		   	 	<strong>Game:</strong>  	 <%=game.id %><br>
 				<strong>Time:</strong>    <%= game.time.strftime("%a, %b %d @ %I:%M %p") %><br>
 		 		<strong>Status:</strong>  <%= game.status %> 
 		 	</div> 
 
 		<% end %> 
-	</div>
+	</div> -->
   </div>
 </div>
  

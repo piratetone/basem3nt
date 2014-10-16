@@ -1,3 +1,4 @@
+<div class="container">
 <h1><%= @user.gamertag %>'s Profile</h1>
 
 <div class="profile-page-info grid-4">
@@ -50,5 +51,7 @@
 
 <div class="avatar"><%= image_tag @user.avatar.url %>
 </div>
-    <div class="map"> <%= image_tag "http://maps.google.com/maps/api/staticmap?size=300x300&sensor=false&zoom=4&markers=#{@user.latitude}%2C#{@user.longitude}" %>
+    <div class="map"><%= image_tag "http://maps.google.com/maps/api/staticmap?size=300x300&sensor=false&zoom=4&markers=#{@user.latitude}%2C#{@user.longitude}" %>
     </div> 
+
+  </div>

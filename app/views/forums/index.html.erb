@@ -1,13 +1,18 @@
 <div class="container">
+
 <h1> Forums </h1>
- 
-<table>
+
+<h4 class="coming-soon">Coming soon!</h4>
+
+
+<!--  
+<table class="table table-striped">
   <tr>
     <th class="col-md-7">Forum</th>
     <th class="col-md-5">Last Post</th>
   </tr>
-  <% for forum in @forums %>
-    <tr>
+<!--   <% for forum in @forums %>
+ -->    <tr>
       <td><h2><%= link_to h(forum.name), forum_path(forum.id) %></h2>
         <small><%= forum.topics.count %> topics</small><br />
         <%= forum.description %></td>
@@ -16,8 +21,8 @@
       <td><%= link_to "Edit", edit_forum_path(forum) %></td>
       <td><%= link_to "Destroy", forum, :confirm => 'Yeah?', :method => :delete %></td>
     </tr>
-  <% end %>
-</table>
- 
-<p style="padding-top:2em;"><%= link_to "New Forum", new_forum_path, :class => "btn btn-info" %></p>
+<!--   <% end %>
+ --></table> 
+ <!-- 
+<p style="padding-top:2em;"><%= link_to "New Forum", new_forum_path, :class => "btn btn-info" %></p> -->
 </div>

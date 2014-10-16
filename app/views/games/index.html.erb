@@ -1,24 +1,22 @@
+<div class="container">
 <h1><b>Games</b></h1>
 
 <div class="container gTable"> 
-<table>
-  <thead class="game">
+<table class="table table-striped">
+  <thead>
     <tr>
-      <th class="th col-md-3">Gamer Tag</th> &nbsp &nbsp
-      <th class="th col-md-3">Time</th>
+      <th class="th col-md-3">Gamer</th>
       <th class="th col-md-3">Gamer Tag</th>
-
+      <th class="th col-md-3">Time</th>
     </tr>
   </thead>
 
-  <tbody class="game">
+  <tbody>
     <% @games.each do |game| %>
-      <tr id="gameRow">
-        <td>   <%= image_tag game.user.avatar.url, :class => "gamePic" %><%= game.user.gamertag   %></td>
-        <td><%= link_to  game.time.strftime("%a %b %d @ %I:%M %p"), game %> </td> &nbsp &nbsp
-         <td><%= game.friend_id  %> </td>
-
-
+      <tr >
+        <td>   <%= image_tag game.user.avatar.url, :class => "gamePic" %></td>
+        <td><%= game.user.gamertag %></td>
+        <td><%= link_to  game.time.strftime("%a %b %d @ %I:%M %p"), game %> </td>
       </tr>
     <% end %>
   </tbody>
@@ -29,4 +27,6 @@
 
 <div class="col-md-12 newGame">
     <%= button_to 'New Game',  new_game_path,  :class=>"white btn btn-success col-md-3", :method => :get %>
+</div>
+
 </div>
