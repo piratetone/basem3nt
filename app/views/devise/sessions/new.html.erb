@@ -1,39 +1,32 @@
-<div class="col-md-12 signIn"> 
+<div class="container"> 
 	<center>
 		<h1>Sign in</h1>
 	</center>
-</div>
 
-<div class="col-md-4 signInBox">
+
 <%= bootstrap_form_for(resource, as: resource_name, url: session_path(resource_name),  layout: :vertical, label_col: "col-sm-2", control_col: "col-sm-10", html: { class: "well" }) do |f| %>
-              <div >
-                <div>
+             <div>
                 <%= f.email_field :email,  placeholder: "Email",  autofocus: true %>
               </div>
               <div>
                 <%= f.password_field :password, placeholder:"password", autocomplete: "off"  %>
               </div>
-                   <% if devise_mapping.rememberable? -%>
-
+                  <% if devise_mapping.rememberable? -%>
               <div> 
                   <% end %>
                 <%= f.form_group do %>
                <button type="submit" class="btn btn-success">
                 Sign in</button>
                 </div> 
-
-          </div>
          <% end %>
 
-                  <div>
-                    <%= f.check_box :remember_me %>
-
-                    <li><%= link_to "Sign in with Facebook", user_omniauth_authorize_path(:facebook) %>
-                   </li>       
-                    <li><%= link_to "Register", new_user_registration_path, :class => 'navbar-link, loginLogOut' %>
-                    </li>
-                  </div>
+                  
+<!--                     <%= f.check_box :remember_me %>
+ -->                    <div class="facebook-sign-in">
+                    <%= link_to "Sign in with Facebook", user_omniauth_authorize_path(:facebook) %> </div>
+                                       <div class="register"><%= link_to "Sign Up", new_user_registration_path, :class => 'navbar-link, loginLogOut' %></div>
             <% end %>     
+        
         </div>
 
 
