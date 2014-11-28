@@ -27,7 +27,7 @@
 
        <% else %>
         <%= menu_group :pull => :right do %>
-            <%= bootstrap_form_for @user, :url => session_path(:user) do |f| -%>
+           <!--  <%= bootstrap_form_for @user, :url => session_path(:user) do |f| -%>
               <div class="sign form-group">
                 <p><%= f.email_field :email,  placeholder: "EMAIL", :class => "input", autofocus: true, hide_label: :true %>
                 </p>
@@ -37,7 +37,7 @@
                   </p>
                 <% end -%>
                 <p><%= link_to "SIGN UP", new_user_registration_path, :class=>  'btn btn-xs btn-primary' %>
-                </p>
+                </p> -->
             <% end %>
         <% end %>
     <% end %>
