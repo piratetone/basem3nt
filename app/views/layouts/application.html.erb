@@ -13,14 +13,7 @@
          <%= menu_item "HOME", root_path %>
         <%= menu_item "GAMES", games_path %>
         <%= menu_item "FORUMS", forums_path %>
-        <%= menu_item "STATUSES", statuses_path %>
-
-          <%= drop_down "MORE" do %>
-            <%= menu_item "CONTACT", contact_path %>
-            <%= menu_item "ABOUT", about_path %>
-            <%= menu_item "GAMERS", gamers_path %>
-            <%= menu_item "CALENDAR", calendar_path %>
-          <% end %>
+        <%= menu_item "NEWSFEED", statuses_path %>
 
      <% end %>
 
@@ -50,10 +43,12 @@
     <% end %>
     <%= bootstrap_flash %>
       <div class="mainBody">
+        <div class="container">
        <%= yield %>      
+     </div>
       </div>
 <div class="col-md-12 footer">
   <div>AN <br> UNTAMED KILLER <br>WHALE PRODUCTION</div>
-</div> 
+  </div> 
   </body>
 </html>
