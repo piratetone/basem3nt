@@ -1,10 +1,9 @@
 <div class="container">
 <h2>Sign up</h2>
+<hr>
 <div class="sign-up-form">
 <%= bootstrap_form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
   <%= devise_error_messages! %>
-
-  <div><%= f.file_field :avatar %></div>
 
   <div><br />
   <%= f.text_field :full_name, autofocus: true %></div>
@@ -26,6 +25,9 @@
 
   <div><br />
   <%= f.text_field :psn %></div>
+
+  <div><%= f.file_field :avatar %></div>
+
 
   <div><br />
   <%= f.email_field :email %></div>
