@@ -1,10 +1,15 @@
-<div class="container"> 
-	<center>
-		<h1>Sign in</h1>
-	</center>
-
-
-<%= bootstrap_form_for(resource, as: resource_name, url: session_path(resource_name),  layout: :vertical, label_col: "col-sm-2", control_col: "col-sm-10", html: { class: "well" }) do |f| %>
+<div class="container">
+  <div class="home-page-main-container">
+      <h1>Welcome to the Basem3nt</h1>
+      <hr>
+      <p>The Basem3nt League is the world's great videogame hockey beer league.</p>
+      <p>We operate online video game hockey leagues using EA's NHL video game series on the Xbox 360 and Xbox One systems.</p>
+      <p>We are still in private beta.</p>
+  </div>
+  <div class="home-page-sign-in"> 
+		<h2>Sign In</h2>
+    <hr>
+    <%= bootstrap_form_for(resource, as: resource_name, url: session_path(resource_name),  layout: :vertical, label_col: "col-sm-2", control_col: "col-sm-10", html: { class: "well" }) do |f| %>
              <div>
                 <%= f.email_field :email,  placeholder: "Email",  autofocus: true %>
               </div>
@@ -18,7 +23,7 @@
                <button type="submit" class="btn btn-success">
                 Sign in</button>
                 </div> 
-         <% end %>
+    <% end %>
 
                   
 <!--                     <%= f.check_box :remember_me %>
@@ -27,7 +32,7 @@
                                        <div class="register"><%= link_to "Sign Up", new_user_registration_path, :class => 'navbar-link, loginLogOut' %></div>
             <% end %>     
         
-        </div>
-
+    </div>
+</div>
 
 
